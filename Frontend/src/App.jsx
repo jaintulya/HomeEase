@@ -1,13 +1,12 @@
-import React from 'react'
+import { Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-blue-600">
-        HomeEase Final Project
-      </h1>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
