@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+import DashboardLayout from '../components/DashboardLayout';
 
 const UserDashboard = () => {
   const navigate = useNavigate();
@@ -14,62 +15,14 @@ const UserDashboard = () => {
     setUser(JSON.parse(userData));
   }, [navigate]);
 
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    navigate('/login');
-  };
+
 
   if (!user) return null;
 
   return (
-    <div className="bg-background text-on-background min-h-screen flex font-body">
-      {/* SideNavBar Component */}
-      <aside className="fixed left-0 top-0 flex flex-col py-8 bg-stone-100 h-screen w-64 rounded-r-[3rem] shadow-[20px_0_40px_rgba(73,24,0,0.03)] z-50">
-        <div className="px-8 mb-10">
-          <span className="text-xl font-black text-[#a33f00]">HomeEase</span>
-        </div>
-        <div className="flex-1 flex flex-col gap-2">
-          {/* Active State: Dashboard */}
-          <a className="bg-[#ffae89] text-[#a33f00] font-bold rounded-full mx-2 px-4 py-3 flex items-center gap-3 transition-transform hover:translate-x-1" href="#">
-            <span className="material-symbols-outlined">grid_view</span>
-            <span className="text-sm">Dashboard</span>
-          </a>
-          <a className="text-[#5e605a] hover:bg-stone-200 rounded-full mx-2 px-4 py-3 flex items-center gap-3 transition-transform hover:translate-x-1" href="#">
-            <span className="material-symbols-outlined">calendar_today</span>
-            <span className="text-sm">Bookings</span>
-          </a>
-
-          <a className="text-[#5e605a] hover:bg-stone-200 rounded-full mx-2 px-4 py-3 flex items-center gap-3 transition-transform hover:translate-x-1" href="#">
-            <span className="material-symbols-outlined">chat_bubble</span>
-            <span className="text-sm">Messages</span>
-          </a>
-          <a className="text-[#5e605a] hover:bg-stone-200 rounded-full mx-2 px-4 py-3 flex items-center gap-3 transition-transform hover:translate-x-1" href="#">
-            <span className="material-symbols-outlined">settings</span>
-            <span className="text-sm">Settings</span>
-          </a>
-        </div>
-        <div className="px-6 mb-8 mt-auto">
-          <button className="w-full py-4 bg-gradient-to-br from-primary to-primary-dim text-on-primary rounded-full font-bold shadow-lg hover:scale-95 transition-transform">
-            Book New Service
-          </button>
-        </div>
-        <div className="border-t border-outline-variant/15 pt-6 flex flex-col gap-2">
-          <a className="text-[#5e605a] hover:bg-stone-200 rounded-full mx-2 px-4 py-3 flex items-center gap-3 transition-transform hover:translate-x-1" href="#">
-            <span className="material-symbols-outlined">help</span>
-            <span className="text-sm">Help Center</span>
-          </a>
-          <button onClick={handleLogout} className="text-[#5e605a] hover:bg-stone-200 rounded-full mx-2 px-4 py-3 flex items-center gap-3 transition-transform hover:translate-x-1 w-full text-left">
-            <span className="material-symbols-outlined">logout</span>
-            <span className="text-sm">Logout</span>
-          </button>
-        </div>
-      </aside>
-
-      {/* Main Content Canvas */}
-      <main className="ml-64 flex-1 p-12 w-full">
-        {/* Header Section */}
-        <header className="flex justify-between items-end mb-12">
+    <DashboardLayout activeRoute="dashboard">
+      {/* Header Section */}
+      <header className="flex justify-between items-end mb-12">
           <div className="space-y-2">
             <h1 className="text-5xl font-extrabold tracking-tight text-on-surface font-headline">Welcome back, {user.name || 'User'}.</h1>
             <p className="text-on-surface-variant text-lg">Your home is managed, your peace is preserved.</p>
@@ -138,10 +91,10 @@ const UserDashboard = () => {
           <div className="col-span-12 mt-4">
             <div className="flex justify-between items-center mb-8">
               <h2 className="text-3xl font-bold tracking-tight font-headline">Recent History</h2>
-              <button className="text-primary font-bold flex items-center gap-2 group">
+              <Link to="/bookings" className="text-primary font-bold flex items-center gap-2 group">
                 View All Activity
                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-              </button>
+              </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* History Tile 1 */}
@@ -191,7 +144,7 @@ const UserDashboard = () => {
         <footer className="mt-24 pt-12 border-t border-outline-variant/15 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <p className="text-lg font-bold text-primary mb-1">HomeEase</p>
-            <p className="text-sm text-on-surface-variant">© 2024 HomeEase. Crafted for the tactile hearth.</p>
+            <p className="text-sm text-on-surface-variant">© 2026 HomeEase. Crafted for the tactile hearth.</p>
           </div>
           <nav className="flex gap-8">
             <a className="text-sm text-[#5e605a] hover:text-[#a33f00] transition-colors" href="#">Privacy Policy</a>
@@ -200,8 +153,7 @@ const UserDashboard = () => {
             <a className="text-sm text-[#5e605a] hover:text-[#a33f00] transition-colors" href="#">Careers</a>
           </nav>
         </footer>
-      </main>
-    </div>
+    </DashboardLayout>
   );
 };
 

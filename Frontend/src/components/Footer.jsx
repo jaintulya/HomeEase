@@ -11,7 +11,7 @@ const Footer = () => {
         <a className="text-[#5e605a] hover:text-[#a33f00] transition-colors" href="#">Careers</a>
       </div>
       <p className="text-[#5e605a] font-['Be_Vietnam_Pro'] text-sm text-center">
-        © 2024 HomeEase. Crafted for the tactile hearth.
+        © 2026 HomeEase. Crafted for the tactile hearth.
       </p>
       <div className="flex gap-4 mt-4">
         <a className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary-container transition-colors" href="#">

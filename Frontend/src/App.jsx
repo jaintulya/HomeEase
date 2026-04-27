@@ -6,6 +6,7 @@ import SignupPage from './pages/SignupPage';
 import UserDashboard from './pages/UserDashboard';
 import WorkerDashboard from './pages/WorkerDashboard';
 import AdminDashboard from './pages/AdminDashboard';
+import BookingHistory from './pages/BookingHistory';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/user-dashboard" element={<UserDashboard />} />
+      <Route path="/bookings" element={<BookingHistory />} />
       <Route path="/worker-dashboard" element={<WorkerDashboard />} />
       <Route path="/admin-dashboard" element={<AdminDashboard />} />
     </Routes>
