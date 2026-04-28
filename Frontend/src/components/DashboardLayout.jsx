@@ -62,21 +62,21 @@ const DashboardLayout = ({ children, activeRoute }) => {
           {/* Messages Link */}
           <Link 
             className={`rounded-full mx-2 px-4 py-3 flex items-center ${isMinimized ? 'justify-center' : 'gap-3'} transition-transform hover:translate-x-1 ${activeRoute === 'messages' ? 'bg-[#ffae89] text-[#a33f00] font-bold' : 'text-[#5e605a] hover:bg-stone-200'}`} 
-            to="#"
+            to="/messages"
             title="Messages"
           >
-            <span className="material-symbols-outlined">chat_bubble</span>
+            <span className="material-symbols-outlined" style={activeRoute === 'messages' ? { fontVariationSettings: "'FILL' 1" } : {}}>chat_bubble</span>
             {!isMinimized && <span className="text-sm truncate">Messages</span>}
           </Link>
 
-          {/* Settings Link */}
+          {/* Profile Link */}
           <Link 
-            className={`rounded-full mx-2 px-4 py-3 flex items-center ${isMinimized ? 'justify-center' : 'gap-3'} transition-transform hover:translate-x-1 ${activeRoute === 'settings' ? 'bg-[#ffae89] text-[#a33f00] font-bold' : 'text-[#5e605a] hover:bg-stone-200'}`} 
-            to="#"
-            title="Settings"
+            className={`rounded-full mx-2 px-4 py-3 flex items-center ${isMinimized ? 'justify-center' : 'gap-3'} transition-transform hover:translate-x-1 ${activeRoute === 'profile' ? 'bg-[#ffae89] text-[#a33f00] font-bold' : 'text-[#5e605a] hover:bg-stone-200'}`} 
+            to="/profile"
+            title="Profile"
           >
-            <span className="material-symbols-outlined">settings</span>
-            {!isMinimized && <span className="text-sm truncate">Settings</span>}
+            <span className="material-symbols-outlined" style={activeRoute === 'profile' ? { fontVariationSettings: "'FILL' 1" } : {}}>account_circle</span>
+            {!isMinimized && <span className="text-sm truncate">Profile</span>}
           </Link>
         </div>
 
@@ -93,11 +93,11 @@ const DashboardLayout = ({ children, activeRoute }) => {
 
         <div className="border-t border-outline-variant/15 pt-6 flex flex-col gap-2">
           <Link 
-            className={`rounded-full mx-2 px-4 py-3 flex items-center ${isMinimized ? 'justify-center' : 'gap-3'} transition-transform hover:translate-x-1 text-[#5e605a] hover:bg-stone-200`} 
-            to="#"
+            className={`rounded-full mx-2 px-4 py-3 flex items-center ${isMinimized ? 'justify-center' : 'gap-3'} transition-transform hover:translate-x-1 ${activeRoute === 'help' ? 'bg-[#ffae89] text-[#a33f00] font-bold' : 'text-[#5e605a] hover:bg-stone-200'}`} 
+            to="/help"
             title="Help Center"
           >
-            <span className="material-symbols-outlined">help</span>
+            <span className="material-symbols-outlined" style={activeRoute === 'help' ? { fontVariationSettings: "'FILL' 1" } : {}}>help</span>
             {!isMinimized && <span className="text-sm truncate">Help Center</span>}
           </Link>
           <button 

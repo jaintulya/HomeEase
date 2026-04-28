@@ -13,6 +13,9 @@ import ConfirmationPage from './pages/ConfirmationPage';
 import EmergencyPage from './pages/EmergencyPage';
 import EmergencyWorkerPage from './pages/EmergencyWorkerPage';
 import EmergencySuccess from './pages/EmergencySuccess';
+import MessagesPage from './pages/MessagesPage';
+import HelpPage from './pages/HelpPage';
+import ProfilePage from './pages/ProfilePage';
 
 import { BookingProvider } from './context/BookingContext';
 
@@ -33,6 +36,9 @@ function App() {
         <Route path="/emergency" element={<EmergencyPage />} />
         <Route path="/emergency-worker" element={<EmergencyWorkerPage />} />
         <Route path="/emergency-success" element={<EmergencySuccess />} />
+        <Route path="/messages" element={<MessagesPage />} />
+        <Route path="/help" element={<HelpPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </BookingProvider>
   );
