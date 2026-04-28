@@ -10,6 +10,9 @@ import BookingHistory from './pages/BookingHistory';
 import BookingPage from './pages/BookingPage';
 import WorkerSelectionPage from './pages/WorkerSelectionPage';
 import ConfirmationPage from './pages/ConfirmationPage';
+import EmergencyPage from './pages/EmergencyPage';
+import EmergencyWorkerPage from './pages/EmergencyWorkerPage';
+import EmergencySuccess from './pages/EmergencySuccess';
 
 import { BookingProvider } from './context/BookingContext';
 
@@ -27,6 +30,9 @@ function App() {
         <Route path="/booking" element={<BookingPage />} />
         <Route path="/workers" element={<WorkerSelectionPage />} />
         <Route path="/confirmation" element={<ConfirmationPage />} />
+        <Route path="/emergency" element={<EmergencyPage />} />
+        <Route path="/emergency-worker" element={<EmergencyWorkerPage />} />
+        <Route path="/emergency-success" element={<EmergencySuccess />} />
       </Routes>
     </BookingProvider>
   );

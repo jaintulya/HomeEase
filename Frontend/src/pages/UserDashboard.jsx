@@ -28,7 +28,7 @@ const UserDashboard = () => {
             <p className="text-on-surface-variant text-lg">Your home is managed, your peace is preserved.</p>
           </div>
           <div className="flex items-center gap-6">
-            <button className="bg-error-container text-on-error-container px-8 py-4 rounded-xl flex items-center gap-3 font-bold hover:shadow-xl transition-all border-none relative overflow-hidden group">
+            <button onClick={() => navigate('/emergency')} className="bg-error-container text-on-error-container px-8 py-4 rounded-xl flex items-center gap-3 font-bold hover:shadow-xl transition-all border-none relative overflow-hidden group">
               <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>bolt</span>
               Emergency Book

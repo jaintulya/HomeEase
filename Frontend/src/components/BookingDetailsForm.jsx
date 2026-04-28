@@ -10,7 +10,7 @@ const TIME_SLOTS = [
 const DYNAMIC_FIELDS = {
   cleaning: [
     { key: 'houseSize', label: 'House Size', type: 'select', options: ['1BHK', '2BHK', '3BHK', '4BHK+'] },
-    { key: 'cleaningType', label: 'Cleaning Type', type: 'select', options: ['Full Home', 'Kitchen Only', 'Bathroom Only'] },
+    { key: 'cleaningType', label: 'Cleaning Type', type: 'select', options: ['Full Home', 'Kitchen Only', 'Bathroom Only', 'Other'] },
   ],
   cooking: [
     { key: 'mealType', label: 'Meal Type', type: 'select', options: ['Breakfast', 'Lunch', 'Dinner', 'All Meals'] },
