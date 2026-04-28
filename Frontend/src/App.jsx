@@ -7,18 +7,28 @@ import UserDashboard from './pages/UserDashboard';
 import WorkerDashboard from './pages/WorkerDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 import BookingHistory from './pages/BookingHistory';
+import BookingPage from './pages/BookingPage';
+import WorkerSelectionPage from './pages/WorkerSelectionPage';
+import ConfirmationPage from './pages/ConfirmationPage';
+
+import { BookingProvider } from './context/BookingContext';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/signup" element={<SignupPage />} />
-      <Route path="/user-dashboard" element={<UserDashboard />} />
-      <Route path="/bookings" element={<BookingHistory />} />
-      <Route path="/worker-dashboard" element={<WorkerDashboard />} />
-      <Route path="/admin-dashboard" element={<AdminDashboard />} />
-    </Routes>
+    <BookingProvider>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/user-dashboard" element={<UserDashboard />} />
+        <Route path="/bookings" element={<BookingHistory />} />
+        <Route path="/worker-dashboard" element={<WorkerDashboard />} />
+        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/booking" element={<BookingPage />} />
+        <Route path="/workers" element={<WorkerSelectionPage />} />
+        <Route path="/confirmation" element={<ConfirmationPage />} />
+      </Routes>
+    </BookingProvider>
   );
 }
 

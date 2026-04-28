@@ -82,6 +82,7 @@ const DashboardLayout = ({ children, activeRoute }) => {
 
         <div className={`px-6 mb-8 mt-auto flex justify-center`}>
           <button 
+            onClick={() => navigate('/booking')}
             className={`py-4 bg-gradient-to-br from-primary to-primary-dim text-on-primary rounded-full font-bold shadow-lg flex items-center justify-center gap-2 hover:scale-95 transition-transform ${isMinimized ? 'w-12 h-12 p-0' : 'w-full'}`}
             title="Book New Service"
           >
