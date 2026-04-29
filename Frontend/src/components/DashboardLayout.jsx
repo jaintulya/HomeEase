@@ -55,7 +55,7 @@ const DashboardLayout = ({ children, activeRoute, role: propRole }) => {
       >
         <div className={`px-8 mb-10 flex items-center ${isMinimized ? 'justify-center' : 'justify-between'}`}>
           {!isMinimized && <span className="text-xl font-black text-[#a33f00] truncate">HomeEase</span>}
-          {isMinimized && <span className="text-xl font-black text-[#a33f00]">H</span>}
+          {isMinimized && <img src="/favicon.png" alt="HomeEase" className="w-8 h-8 object-contain rounded-lg shadow-sm" />}
           
           <button 
             onClick={toggleMinimize}
