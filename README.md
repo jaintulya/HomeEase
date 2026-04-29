@@ -112,4 +112,10 @@ src/
 ---
 
 ## 📌 Project Conclusion
-HomeEase is more than just a booking app; it's a reliability layer for the modern home. By organizing the domestic service sector through professional UI/UX and robust functional flows, it transforms how households manage their daily lives.
+HomeEase transforms the fragmented domestic help industry into a reliable, professional service hub. By combining **modern UI aesthetics** with **robust verification and instant accessibility**, it brings peace of mind to the modern household.
+
+---
+
+## 🎨 Design & Prototype (Figma)
+You can explore the high-fidelity design system and interactive prototype for HomeEase here:
+🔗 **[Figma Prototype Link](https://www.figma.com/proto/adYtyU8zPOoO1hOih9ppAs/Untitled?node-id=334-6475&p=f&viewport=-1421%2C86%2C0.4&t=e4ToDCcNSB7Kx3A2-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=341%3A6476)**
