@@ -4,6 +4,8 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
+🔗 **Live Demo: [homeease-tulya.vercel.app](https://homeease-tulya.vercel.app/)**
+
 ## 📌 Overview
 
 **HomeEase** is a sophisticated web application built to revolutionize the domestic service industry. It serves as a digital bridge connecting households with verified professional workers (maids, cooks, babysitters) through a "Tactile Hearth" design philosophy—balancing modern efficiency with a warm, household-centric aesthetic.
@@ -19,7 +21,7 @@ The platform is engineered to handle both **Emergency Domestic Replacements** an
 *   **State Management**: 
     *   **Context API**: `BookingContext` manages complex multi-step booking flows and global states.
     *   **Persistent Storage**: Robust `localStorage` integration for authentication tokens, user profile persistence, and theme preferences.
-*   **Routing**: Sophisticated `react-router-dom` implementation with role-based navigation paths for Users, Workers, and Admins.
+*   **Routing**: Sophisticated `react-router-dom` implementation with role-based navigation paths for Users and Workers.
 
 ### Component-Driven Design
 The project follows an atomic design approach with highly reusable components:
@@ -44,9 +46,6 @@ The project follows an atomic design approach with highly reusable components:
 *   **Verification Portal**: Integrated document upload system for ID proofs and photos to earn the "Verified Badge."
 *   **Earnings Analytics**: Detailed tracking of income trends and job completions.
 
-### 🛠️ Admin Oversight
-*   **System Dashboard**: Full visibility into user metrics, worker registrations, and system-wide booking statistics.
-*   **Support Management**: Integrated Help Center and conflict resolution tools.
 
 ---
 
@@ -81,24 +80,41 @@ src/
 
 ---
 
+## 📡 API Documentation
+
+The project includes a comprehensive Postman collection for backend testing and integration.
+*   **Production API**: [https://homeease-8cv9.onrender.com](https://homeease-8cv9.onrender.com)
+*   **Postman Collection Link**: [View on Postman](https://tulya-jain-cg-7399319.postman.co/workspace/433d93db-3a63-4eb4-82b1-980b84f711f3/collection/52084195-ab6539b3-974e-4c8f-a0c2-76697236363a?action=share&source=copy-link&creator=52084195)
+
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
 *   Node.js (v16.x or higher)
 *   npm or yarn
 
-### Installation
-1.  **Clone the Repo**:
+### Installation & Setup
+
+1.  **Clone the Repository**:
     ```bash
-    git clone <repo-url>
+    git clone https://github.com/jaintulya/HomeEase.git
+    cd HomeEase
     ```
-2.  **Install Packages**:
+
+2.  **Backend Setup**:
     ```bash
+    cd Backend
     npm install
+    npm start  # Runs on http://localhost:5000
     ```
-3.  **Launch the App**:
+
+3.  **Frontend Setup**:
     ```bash
-    npm run dev
+    cd ../Frontend
+    npm install
+    npm run dev  # Runs on http://localhost:5173
     ```
 
 ---
