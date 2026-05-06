@@ -4,7 +4,6 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-🔗 **Live Demo: [homeease-tulya.vercel.app](https://homeease-tulya.vercel.app/)**
 
 ## 📌 Overview
 
@@ -135,3 +134,18 @@ HomeEase transforms the fragmented domestic help industry into a reliable, profe
 ## 🎨 Design & Prototype (Figma)
 You can explore the high-fidelity design system and interactive prototype for HomeEase here:
 🔗 **[Figma Prototype Link](https://www.figma.com/proto/adYtyU8zPOoO1hOih9ppAs/Untitled?node-id=334-6475&p=f&viewport=-1421%2C86%2C0.4&t=e4ToDCcNSB7Kx3A2-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=341%3A6476)**
+🔗 **Live Demo: [homeease-tulya.vercel.app](https://homeease-tulya.vercel.app/)**
+## 📡 API Documentation
+
+The project includes a comprehensive Postman collection for backend testing and integration.
+*   **Production API**: [https://homeease-8cv9.onrender.com](https://homeease-8cv9.onrender.com)
+*   **Postman Collection Link**: [View on Postman](https://tulya-jain-cg-7399319.postman.co/workspace/433d93db-3a63-4eb4-82b1-980b84f711f3/collection/52084195-ab6539b3-974e-4c8f-a0c2-76697236363a?action=share&source=copy-link&creator=52084195)
+---
+
+## 🎥 Project Demo Video
+
+Watch the complete walkthrough and live demonstration of HomeEase on YouTube:
+
+🔗 **YouTube Demo:** https://youtu.be/cjDCsA7oesM
+
+---
