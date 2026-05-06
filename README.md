@@ -1,142 +1,258 @@
 # 🏠 HomeEase – Premium Emergency Domestic Help Platform
 
+## 🔗 Project Links
+
+🎨 Figma Design:  
+https://www.figma.com/proto/adYtyU8zPOoO1hOih9ppAs/Untitled?node-id=334-6475&p=f&viewport=-1421%2C86%2C0.4&t=e4ToDCcNSB7Kx3A2-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=341%3A6476
+
+🌐 Live Project:  
+https://homeease-tulya.vercel.app/
+
+⚙️ Backend API:  
+https://homeease-8cv9.onrender.com
+
+📡 Postman Documentation:  
+https://tulya-jain-cg-7399319.postman.co/workspace/433d93db-3a63-4eb4-82b1-980b84f711f3/collection/52084195-ab6539b3-974e-4c8f-a0c2-76697236363a?action=share&source=copy-link&creator=52084195
+
+🎥 YouTube Demo Video:  
+https://youtu.be/cjDCsA7oesM
+
+---
+
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
+---
 
-## 📌 Overview
+# 📌 Project Description
 
-**HomeEase** is a sophisticated web application built to revolutionize the domestic service industry. It serves as a digital bridge connecting households with verified professional workers (maids, cooks, babysitters) through a "Tactile Hearth" design philosophy—balancing modern efficiency with a warm, household-centric aesthetic.
+HomeEase is a premium domestic help platform designed to simplify the process of finding reliable household services. The platform connects households with verified workers such as cleaners, cooks, babysitters, plumbers, electricians, and more through a modern and intuitive web experience.
 
-The platform is engineered to handle both **Emergency Domestic Replacements** and **Planned Service Schedules**, ensuring that no household is left without help when they need it most.
+The application focuses on both scheduled bookings and emergency service requests while maintaining a clean UI/UX and responsive design across all devices.
 
 ---
 
-## 🏗️ Technical Architecture
+# 🚨 Problem Statement
 
-### Core Frontend Logic
-*   **Framework**: React (Vite-powered) for ultra-fast performance.
-*   **State Management**: 
-    *   **Context API**: `BookingContext` manages complex multi-step booking flows and global states.
-    *   **Persistent Storage**: Robust `localStorage` integration for authentication tokens, user profile persistence, and theme preferences.
-*   **Routing**: Sophisticated `react-router-dom` implementation with role-based navigation paths for Users and Workers.
-
-### Component-Driven Design
-The project follows an atomic design approach with highly reusable components:
-*   **Layouts**: `DashboardLayout` provides a unified structural skeleton with responsive sidebars and headers.
-*   **UI Kit**: Custom-built `Button`, `Input`, `Card`, and `ConfirmModal` components with consistent accessibility and micro-interactions.
-*   **Specialized Widgets**: `WorkerCard`, `ServiceSelector`, `StepProgress`, and `WorkSizeSelector` for intuitive user interactions.
+Finding trustworthy domestic workers during emergencies or for scheduled services is often difficult, time-consuming, and unorganized. Existing systems lack proper verification, instant accessibility, and a user-friendly management experience.
 
 ---
 
-## 🎯 Key User Modules
+# 💡 Solution Overview
 
-### 👤 User (Household) Ecosystem
-*   **Dynamic Dashboard**: High-level overview of active bookings and personalized recommendations.
-*   **Emergency Mode**: A dedicated "Quick Help" system for instant worker assignment.
-*   **Multi-Step Booking**: A structured flow involving worker selection, service detailing, and confirmation.
-*   **History & Rebooking**: Dedicated history page to track past engagements and quickly re-hire trusted professionals.
-*   **Tactile Profile**: Comprehensive profile management with detailed 4-point address validation.
+HomeEase provides a secure and structured ecosystem where users can easily book verified household services while workers can manage requests, bookings, and earnings through dedicated dashboards.
 
-### 👨‍🍳 Worker (Professional) Ecosystem
-*   **Professional Dashboard**: Visualizes earnings, active jobs, and pending requests.
-*   **Job Request Portal**: Real-time interface to accept or reject service requests.
-*   **Verification Portal**: Integrated document upload system for ID proofs and photos to earn the "Verified Badge."
-*   **Earnings Analytics**: Detailed tracking of income trends and job completions.
+The platform includes:
 
+- Emergency service booking
+- Multi-step scheduled booking flow
+- Worker request management
+- Role-based dashboards
+- Responsive UI/UX
+- Secure authentication flow
 
 ---
 
-## 🎨 UI/UX Excellence
+# 🌟 Key Features
 
-*   **Tactile Hearth Theme**: A premium color palette using rich oranges (`#a33f00`) and high-contrast typography (`#111827`, `#374151`) to ensure a warm yet professional feel.
-*   **Responsive Flow**: Optimized for all devices, from mobile phones to high-resolution desktops, using a sophisticated Tailwind grid system.
-*   **Accessibility First**: Optimized color contrast, semantic HTML, and clear visual feedback (Skeleton loaders, Success banners).
-*   **Micro-animations**: Subtle transitions and hover effects that make the interface feel alive and interactive.
+## 👤 User Features
+
+- User Dashboard
+- Emergency Booking
+- Multi-Step Booking Flow
+- Booking History
+- Role-Based Authentication
+- Profile Management
+- Help & Support Section
 
 ---
 
-## 📂 Directory Analysis
+## 👨‍🔧 Worker Features
+
+- Worker Dashboard
+- Job Request Management
+- Booking Tracking
+- Earnings Overview
+- Availability Toggle
+- Worker Profile Management
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+- React (Vite)
+- Tailwind CSS
+- Framer Motion
+- Formik
+- Yup
+
+## Backend
+- Node.js
+- Express.js
+
+## Authentication
+- JWT Authentication
+- Bcrypt
+
+## Deployment
+- Vercel
+- Render
+
+---
+
+# 📂 Folder Structure
 
 ```bash
 src/
-├── components/     # UI Building Blocks (Navbar, Footer, Service Cards)
-├── context/        # State Management (BookingContext)
-├── pages/          # Full-Page Modules (Dashboards, Booking Flow, Profiles)
-├── assets/         # Static Media and Icons
-├── index.css       # Global Design Tokens and Tailwind Directives
-└── App.jsx         # Routing Architecture & Provider Configuration
+├── components/
+├── context/
+├── pages/
+├── assets/
+├── App.jsx
+└── index.css
 ```
 
 ---
 
-## 🔐 Security & Data Integrity
+# 📸 Project Screenshots
 
-*   **Encrypted State**: Passwords and sensitive data are managed with rigorous validation using **Formik + Yup**.
-*   **Session Guard**: Implemented logic to ensure stale state synchronization, particularly during password updates and profile changes.
-*   **Verification Standard**: Multi-point document upload system to maintain the highest trust standards for domestic workers.
+## 🏡 Landing Page
 
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-*   Node.js (v16.x or higher)
-*   npm or yarn
-
-### Installation & Setup
-
-1.  **Clone the Repository**:
-    ```bash
-    git clone https://github.com/jaintulya/HomeEase.git
-    cd HomeEase
-    ```
-
-2.  **Backend Setup**:
-    ```bash
-    cd Backend
-    npm install
-    npm start  # Runs on http://localhost:5000
-    ```
-
-3.  **Frontend Setup**:
-    ```bash
-    cd ../Frontend
-    npm install
-    npm run dev  # Runs on http://localhost:5173
-    ```
+<img width="100%" alt="Landing Page" src="./screenshots/landing-page.png" />
 
 ---
 
-## 📈 Future Roadmap
-*   **Mobile App Expansion**: Porting the React logic to React Native.
-*   **Real-time Tracking**: GPS-based tracking for emergency worker arrival.
-*   **Subscription Models**: Premium tiers for priority booking and insurance coverage.
-*   **AI Matching**: Smarter worker-user matching based on history and proximity.
+## 👤 User Dashboard
+
+<img width="100%" alt="User Dashboard" src="./screenshots/user-dashboard.png" />
 
 ---
 
-## 📌 Project Conclusion
-HomeEase transforms the fragmented domestic help industry into a reliable, professional service hub. By combining **modern UI aesthetics** with **robust verification and instant accessibility**, it brings peace of mind to the modern household.
+## 📅 Multi-Step Booking Flow
+
+<img width="100%" alt="Book New" src="./screenshots/book-new.png" />
 
 ---
 
-## 🎨 Design & Prototype (Figma)
-You can explore the high-fidelity design system and interactive prototype for HomeEase here:
-🔗 **[Figma Prototype Link](https://www.figma.com/proto/adYtyU8zPOoO1hOih9ppAs/Untitled?node-id=334-6475&p=f&viewport=-1421%2C86%2C0.4&t=e4ToDCcNSB7Kx3A2-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=341%3A6476)**
-🔗 **Live Demo: [homeease-tulya.vercel.app](https://homeease-tulya.vercel.app/)**
-## 📡 API Documentation
+## ⚡ Emergency Booking
 
-The project includes a comprehensive Postman collection for backend testing and integration.
-*   **Production API**: [https://homeease-8cv9.onrender.com](https://homeease-8cv9.onrender.com)
-*   **Postman Collection Link**: [View on Postman](https://tulya-jain-cg-7399319.postman.co/workspace/433d93db-3a63-4eb4-82b1-980b84f711f3/collection/52084195-ab6539b3-974e-4c8f-a0c2-76697236363a?action=share&source=copy-link&creator=52084195)
+<img width="100%" alt="Emergency Booking" src="./screenshots/emergency-booking.png" />
+
 ---
 
-## 🎥 Project Demo Video
+## 👨‍🔧 Worker Dashboard
 
-Watch the complete walkthrough and live demonstration of HomeEase on YouTube:
+<img width="100%" alt="Worker Dashboard" src="./screenshots/worker-dashboard.png" />
 
-🔗 **YouTube Demo:** https://youtu.be/cjDCsA7oesM
+---
+
+## 📋 Job Requests Page
+
+<img width="100%" alt="Job Requests" src="./screenshots/job-requests.png" />
+
+---
+
+# 🔐 Authentication & Validation
+
+- JWT-based authentication
+- Form validation using Formik + Yup
+- Protected routes
+- Role-based dashboard access
+- Persistent login using localStorage
+
+---
+
+# 🎨 UI/UX Highlights
+
+- Premium warm-tone design system
+- Fully responsive layout
+- Clean dashboard architecture
+- Modern card-based UI
+- Smooth hover effects and transitions
+- Multi-step progress tracking
+- Professional typography hierarchy
+
+---
+
+# 🚀 Getting Started
+
+## Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+---
+
+## Installation & Setup
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/jaintulya/HomeEase.git
+cd HomeEase
+```
+
+---
+
+### 2️⃣ Backend Setup
+
+```bash
+cd Backend
+npm install
+npm start
+```
+
+Backend runs on:
+```bash
+http://localhost:5000
+```
+
+---
+
+### 3️⃣ Frontend Setup
+
+```bash
+cd ../Frontend
+npm install
+npm run dev
+```
+
+Frontend runs on:
+```bash
+http://localhost:5173
+```
+
+---
+
+# 📈 Future Improvements
+
+- Real-time worker tracking
+- AI-based worker matching
+- Online payments
+- Push notifications
+- React Native mobile app
+- Real-time chat system
+
+---
+
+# 📌 Conclusion
+
+HomeEase transforms the domestic help ecosystem into a more reliable, professional, and accessible platform by combining modern UI/UX with structured service management and role-based workflows.
+
+The project demonstrates full-stack development concepts including authentication, protected routing, responsive dashboards, API integration, and scalable UI architecture.
+
+---
+
+# 👨‍💻 Developer
+
+## Tulya Jain
+
+💻 GitHub:  
+https://github.com/jaintulya
+
+💼 LinkedIn:  
+https://www.linkedin.com/in/tulya-jain-b84827372/
 
 ---
