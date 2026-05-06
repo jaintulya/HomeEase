@@ -79,15 +79,6 @@ src/
 
 ---
 
-## 📡 API Documentation
-
-The project includes a comprehensive Postman collection for backend testing and integration.
-*   **Production API**: [https://homeease-8cv9.onrender.com](https://homeease-8cv9.onrender.com)
-*   **Postman Collection Link**: [View on Postman](https://tulya-jain-cg-7399319.postman.co/workspace/433d93db-3a63-4eb4-82b1-980b84f711f3/collection/52084195-ab6539b3-974e-4c8f-a0c2-76697236363a?action=share&source=copy-link&creator=52084195)
-
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
