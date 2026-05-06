@@ -119,38 +119,41 @@ src/
 # 📸 Project Screenshots
 
 ## 🏡 Landing Page
-
-<img width="100%" alt="Landing Page" src="./screenshots/landing-page.png" />
+<img width="1918" height="871" alt="image" src="https://github.com/user-attachments/assets/f0caf49b-10b9-4260-9349-ac5c5c18e741" />
 
 ---
 
 ## 👤 User Dashboard
 
-<img width="100%" alt="User Dashboard" src="./screenshots/user-dashboard.png" />
+<img width="1906" height="873" alt="image" src="https://github.com/user-attachments/assets/0a729e2e-1dc7-4cf9-986f-e6a5558b428d" />
+
 
 ---
 
 ## 📅 Multi-Step Booking Flow
 
-<img width="100%" alt="Book New" src="./screenshots/book-new.png" />
+<img width="1901" height="872" alt="image" src="https://github.com/user-attachments/assets/adcd127f-1bd5-4654-a61a-45c4696aeb28" />
+
 
 ---
 
 ## ⚡ Emergency Booking
 
-<img width="100%" alt="Emergency Booking" src="./screenshots/emergency-booking.png" />
+<img width="1876" height="860" alt="image" src="https://github.com/user-attachments/assets/0b0521ff-e91e-43c1-b0c0-a18015e5280a" />
+
 
 ---
 
 ## 👨‍🔧 Worker Dashboard
 
-<img width="100%" alt="Worker Dashboard" src="./screenshots/worker-dashboard.png" />
+<img width="1907" height="868" alt="image" src="https://github.com/user-attachments/assets/90eb4576-4125-437f-b999-984976a8db12" />
 
 ---
 
 ## 📋 Job Requests Page
 
-<img width="100%" alt="Job Requests" src="./screenshots/job-requests.png" />
+<img width="1912" height="876" alt="image" src="https://github.com/user-attachments/assets/40ef7389-467c-466c-9a1d-46530692b6b5" />
+
 
 ---
 
